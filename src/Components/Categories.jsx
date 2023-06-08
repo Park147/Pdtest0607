@@ -15,7 +15,7 @@ const CategoriesBlock = styled.div`
     overflow-x: auto;
   }
 `;
-const Category = styled.div(NavLink)`
+const Category = styled(NavLink)`
   font-size: 1.2 rem;
   cursor: pointer;
   white-space: pre;
@@ -27,19 +27,19 @@ const Category = styled.div(NavLink)`
     color: #495057;
   }
 
-   &.active {
+  &.active {
     font-weight: 600;
     border-bottom: 2px solid #22b8cf;
     color: #22b8cf;
 
-    &:hover{
+    &:hover {
       color: #3bc9db;
     }
-   }
+  }
 
-   & + & {
+  & + & {
     margin-left: 3rem;
-}
+  }
 `;
 const Categories = () => {
   return (
